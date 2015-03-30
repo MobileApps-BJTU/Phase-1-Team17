@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView2"
+            android:cropToPadding="false"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/per_name"
+                android:id="@+id/name"
+                android:layout_weight="1"
+                android:textSize="40dp"
+                android:textColor="#3b3b3b"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/per_ID"
+                    android:id="@+id/ID"
+                    android:layout_weight="0.3"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/per_ID_num"
+                    android:id="@+id/ID_num"
+                    android:textSize="25dp"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/per_rmb"
+            android:id="@+id/per_rmb"
+            android:textSize="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#3b3b3b"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/per_money"
+            android:id="@+id/per_money"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:textColor="#b9a311"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/per_recharge"
+            android:id="@+id/recharge"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#ececec"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/per_withdraw"
+            android:id="@+id/withdraw_cash"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#fe6029"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="这是个人信息和设置页面"
+        android:textColor="#000000" />
+
+</LinearLayout>

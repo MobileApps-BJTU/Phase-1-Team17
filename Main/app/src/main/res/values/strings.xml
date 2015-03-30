@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Main</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sort_by">Sort by</string>
+    <string name="distance">Distance</string>
+    <string name="time">Time</string>
+
+
+    <string name="list_1">Some take out.....
+                              take time:11:20
+                              distance:100 m</string>
+
+    <string name="per_name">Joe Han</string>
+    <string name="per_ID">ID:</string>
+    <string name="per_ID_num">123016466</string>
+    <string name="per_rmb">My money:</string>
+    <string name="per_money">999 $</string>
+
+    <string name="per_recharge">Recharge</string>
+    <string name="per_withdraw">Withdraw Cash</string>
+
+</resources>

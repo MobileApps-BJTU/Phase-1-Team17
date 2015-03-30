@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#e6e6e6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/sort_by"
+            android:id="@+id/textView3"
+            android:layout_weight="0.1"
+            android:gravity="center" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/distance"
+            android:id="@+id/radioButton3"
+            android:layout_weight="0.1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/time"
+            android:id="@+id/radioButton4"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="这是已抢到定单界面"
+        android:textColor="#000000" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2" />
+
+</LinearLayout>

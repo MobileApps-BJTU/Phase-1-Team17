@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <!-- 上边主页面 -->
+
+    <fragment
+        android:id="@+id/fragement_main"
+        android:name="com.example.jnbl.main.FragmentMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_search"
+        android:name="com.example.jnbl.main.FragmentSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_setting"
+        android:name="com.example.jnbl.main.FragmentSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <!-- 底部菜单页面 -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#858585" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:baselineAligned="false"
+        android:clickable="false">
+
+        <ImageButton
+            android:id="@+id/rbOne"
+
+
+            android:src="@drawable/main_list"
+
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/rbTwo"
+
+            android:src="@drawable/my_list"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="fill_parent" />
+
+        <ImageButton
+            android:id="@+id/rbThree"
+
+            android:src="@drawable/personal_page"
+
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
