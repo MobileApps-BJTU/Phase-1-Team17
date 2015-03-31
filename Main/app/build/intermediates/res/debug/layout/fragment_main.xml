@@ -22,26 +22,34 @@
             android:id="@+id/textView"
             android:layout_weight="0.1"
             android:gravity="center" />
-
+        <RadioGroup
+            android:id="@+id/r_g_1"
+            android:contentDescription=""
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="@string/distance"
-            android:id="@+id/radioButton"
-            android:layout_weight="0.1" />
+            android:id="@+id/radio_distance"
+            android:layout_weight="0.1"
+            android:checked="true" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="@string/time"
-            android:id="@+id/radioButton2"
+            android:id="@+id/radio_time"
             android:layout_weight="0.8" />
+        </RadioGroup>
     </LinearLayout>
 
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView" />
+        android:id="@+id/listView"
+        android:clickable="true" />
 
     <TextView
         android:layout_width="fill_parent"
@@ -50,4 +58,4 @@
         android:text="这是首页"
         android:textColor="#000000" />
 
-</LinearLayout><!-- From: file:/D:/Andriod_WorkSpace/Main/app/src/main/res/layout/fragment_main.xml -->
+</LinearLayout><!-- From: file:/D:/android%20studio/Git/Main/app/src/main/res/layout/fragment_main.xml -->

@@ -1,21 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="fill_parent"
-    android:layout_height="100dp">
+    android:layout_height="100dp"
+    android:background="#ffffe028"
+    android:clickable="false">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image_detail"
         android:background="@drawable/bg_border"
         android:src="@drawable/list_1"
-        android:layout_weight="1.8"
         android:padding="3dp" />
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:text="@string/list_1"
-        android:id="@+id/textView2"
-        android:layout_weight="1" />
-</LinearLayout><!-- From: file:/D:/Andriod_WorkSpace/Main/app/src/main/res/layout/list_item.xml -->
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/foodName"
+            android:textColor="#ff2b4cff" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/payment"
+                android:textColor="#ffff1440"
+                android:paddingTop="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:id="@+id/time"
+                android:textColor="#ffff1440"
+                android:paddingTop="2dp"/>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/address"
+            android:textColor="#ff850fff"
+            android:paddingTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/phone"
+            android:textColor="#ff00acff"
+            android:paddingTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/distance"
+            android:textColor="#ff000000"
+            android:paddingTop="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/android%20studio/Git/Main/app/src/main/res/layout/list_item.xml -->

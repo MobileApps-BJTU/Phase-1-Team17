@@ -13,29 +13,46 @@
         android:background="#e6e6e6">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/sort_by"
             android:id="@+id/textView3"
-            android:layout_weight="0.1"
+            android:layout_weight="0.02"
             android:gravity="center" />
+        <RadioGroup
+            android:id="@+id/r_g_2"
+            android:contentDescription=""
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="@string/distance"
-            android:id="@+id/radioButton3"
-            android:layout_weight="0.1" />
+            android:id="@+id/radio_distance2"
+            android:layout_weight="0.1"
+            android:checked="true" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="@string/time"
-            android:id="@+id/radioButton4"
-            android:layout_weight="0.8" />
+            android:id="@+id/radio_time2"
+            android:layout_weight="0.8"
+            android:checked="false" />
+
+        </RadioGroup>
     </LinearLayout>
 
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:clickable="true" />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -43,9 +60,4 @@
         android:text="这是已抢到定单界面"
         android:textColor="#000000" />
 
-    <ListView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView2" />
-
-</LinearLayout><!-- From: file:/D:/Andriod_WorkSpace/Main/app/src/main/res/layout/fragment_my_takeouts.xml -->
+</LinearLayout><!-- From: file:/D:/android%20studio/Git/Main/app/src/main/res/layout/fragment_my_takeouts.xml -->

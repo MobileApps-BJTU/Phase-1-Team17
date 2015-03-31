@@ -1,0 +1,37 @@
+﻿<resources>
+    <string name="app_name">组17</string>
+
+   
+    <string name="action_settings">设置</string>
+
+    <string name="sort_by">排列顺序</string>
+    <string name="distance">距离↓</string>
+    <string name="time">时间↓</string>
+
+
+    <string name="list_1">我们的外卖.....
+                              需要时间:11:20
+                              距离:100 米</string>
+
+    <string name="per_name">乔</string>
+    <string name="per_ID">账号:</string>
+    <string name="per_ID_num">123016466</string>
+    <string name="per_rmb">我的余额:</string>
+    <string name="per_money">999 $</string>
+
+    <string name="per_recharge">充值</string>
+    <string name="per_withdraw">取出现金</string>
+
+    <string name="per_mybalance">我的存款</string>
+    <string name="per_rmb_icon">￥</string>
+    <string name="per_mybalance_num">999</string>
+
+    <string name="per_topup">充入</string>
+    <string name="askForFinish">完成了送餐？</string>
+    <string name="mission_complete">使命完成！！</string>
+    <string name="tip">小费</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="cancellation">撤销</string>
+
+</resources>

@@ -1,6 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@drawable/activity_bg"
     android:orientation="vertical" >
@@ -12,23 +12,32 @@
         android:name="com.example.jnbl.main.FragmentMain"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="10" />
+        android:layout_weight="10"
+        tools:layout="@layout/fragment_main" />
 
     <fragment
         android:id="@+id/fragement_search"
         android:name="com.example.jnbl.main.FragmentSearch"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="10" />
+        android:layout_weight="10"
+        tools:layout="@layout/fragment_my_takeouts" />
 
     <fragment
         android:id="@+id/fragement_setting"
         android:name="com.example.jnbl.main.FragmentSetting"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="10" />
+        android:layout_weight="10"
+        tools:layout="@layout/fragment_personal_setting" />
 
     <!-- 底部菜单页面 -->
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.example.jnbl.main.withdraw_cash"
+        android:id="@+id/fragment_withdraw"
+        android:layout_weight="10" />
     <View
         android:layout_width="fill_parent"
         android:layout_height="2dp"
@@ -71,4 +80,4 @@
             android:layout_weight="1" />
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/D:/Andriod_WorkSpace/Main/app/src/main/res/layout/activity_main.xml -->
+</LinearLayout><!-- From: file:/D:/android%20studio/Git/Main/app/src/main/res/layout/activity_main.xml -->
